@@ -38,7 +38,7 @@ describe('GET /api', () => {
       expect(utc_time instanceof Date).toBe(true);
       expect(weekdaysArray).toContain(response.body.current_day);
       expect(response.body.track).toBe('backend');
-      expect(response.body.github_file_url).toBe('bbbb');
+      expect(response.body.github_file_url).toBe('https://github.com/adeyinkaoresanya/hng-stage-one-task/blob/main/server.js');
       expect(response.body.github_repo_url).toBe('https://github.com/adeyinkaoresanya/hng-stage-one-task');
       expect(response.body.status_code).toBe(200);
     });
