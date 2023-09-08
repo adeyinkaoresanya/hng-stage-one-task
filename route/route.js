@@ -1,12 +1,13 @@
 const express = require('express');
 
 const endPointRouter = express.Router();
-const data = require('../database/db');
+const {data, updateUtcTime} = require('../database/db');
 
 
 endPointRouter.get('/', (req, res) => {
     const slack_name = req.query.slack_name;
     const track = req.query.track;
+    updateUtcTime()
 
 
     if (!(slack_name ==='Adeyinka Oresanya' && track ==='backend')) {
