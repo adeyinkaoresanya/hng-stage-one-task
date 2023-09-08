@@ -1,0 +1,30 @@
+{
+  "name": "hng_stage_one_task",
+  "version": "1.0.0",
+  "description": "Stage one task from HNG virtual internship",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeyinkaoresanya/hng-stage-one-task.git"
+  },
+  "author": "Adeyinka Oresanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adeyinkaoresanya/hng-stage-one-task/issues"
+  },
+  "homepage": "https://github.com/adeyinkaoresanya/hng-stage-one-task#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3"
+  }
+}
